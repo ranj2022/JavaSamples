@@ -1,7 +1,12 @@
 public class TechEmp extends Emp {
 	// all the data and methods are available
+    // constructors are not available
+    int bonus;
 
-	int bonus=10000;
+    public TechEmp(int eid, String name, double basicPay, int bonus){
+     super(eid,name,basicPay); // refers to immedaite parent class constructor
+     this.bonus=bonus;
+    }
 
     @Override
 	void calSalary(){ // redefining the parent method - overriding 
@@ -19,9 +24,8 @@ public class TechEmp extends Emp {
 
   public static void main(String[] args) {
   	
-  	TechEmp te1=new TechEmp();
-  	te1.setEmp(111,"ABC",80000);
-
+  	TechEmp te1=new TechEmp(111,"ABC",80000,15000);
+ 
   	te1.calSalary(); // updated salary with bonus
   	te1.getEmp();
   	

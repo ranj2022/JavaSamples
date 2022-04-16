@@ -1,4 +1,4 @@
-abstract class ATM{
+abstracclass ATMInterface{
 abstract void withdraw();
 abstract void deposit();
 
@@ -8,7 +8,7 @@ System.out.println("NCR");
 
 }
 
-public class ATMDemo extends ATM{
+public class ATMInterfaceDemo extends ATM{
 
 void withdraw(){
 System.out.println("withdrawn...");

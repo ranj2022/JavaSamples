@@ -5,7 +5,7 @@ class Emp{
 	protected double basicPay;
     static String org="Apple";
 
-    void setEmp(int eid, String name, double basicPay){
+    public Emp(int eid, String name, double basicPay){
     	this.eid=eid;
     	this.name=name;
     	this.basicPay=basicPay;
@@ -23,8 +23,7 @@ class Emp{
     }
 
     public static void main(String[] args) {
-    	Emp e1=new Emp();
-    	e1.setEmp(123,"ASDF",75000);
+    	Emp e1=new Emp(111,"ABC",75000);
     	e1.calSalary();
     	e1.getEmp();
     }

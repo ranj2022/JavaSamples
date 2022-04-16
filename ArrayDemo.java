@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class ArrayDemo{
 
@@ -30,17 +30,7 @@ public class ArrayDemo{
 
         System.out.println("MAXIMUM is "+max+" \n MINIMUM is "+min);
         
-        int temp;
-
-        for(int i=0;i<size;i++){
-        	for(int j=0;j<size-i-1;j++){
-        		if(numbers[j]>numbers[j+1]){
-        			temp=numbers[j];
-        			numbers[j]=numbers[j+1];
-        			numbers[j+1]=temp;
-        		}
-        	}
-        }
+        Arrays.sort(numbers); // sorts an array - java.util.Arrays
 
         //System.out.println ("SORTED ORDER");
         for(int x:numbers)  // for each

@@ -2,16 +2,13 @@ public class Test{
 	
 	public static void main(String[] args) {
 		
-    Student s1,s2; // references
+     A a1=new A(10,"ABC"); // A() - constructor
+     A a2=new A(11,"XYZ");
+     a1.getA();
+     a2.getA();
 
-    s1=new Student(); // Student() - constructor - with default vaules - 0, null, 0.0
-    s2=new Student(); // 
-
-    s1.setStudent();
-    s2.setStudent();
-
-    s1.getStudent();
-    s2.getStudent();
+     A a3=new A(); //default
+     a3.getA(); // 0 null
 
 	}
 }

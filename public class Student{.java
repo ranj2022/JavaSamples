@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class StaticDemo{
+public class Student{
 	
 private int rno;
 private String name;
 private double cgpa;
+static String colgName="ASDF";
 
-static String colgName="ASDF"; // global or common - to class 
-
-public StaticDemo(){
+//setter 
+void setStudent(){
 Scanner in=new Scanner(System.in);
 
 System.out.println("Please enter student details - rno, name,cgpa");
@@ -20,7 +20,7 @@ cgpa=in.nextDouble();
 
 // getter 
 void getStudent(){
-	System.out.println("Rno: "+rno+"\n Name: "+name+"\n CGPA: "+cgpa+"\nCollege :"+colgName);
+	System.out.println("Rno: "+rno+"\n Name: "+name+" \n CGPA: "+cgpa+" College :\n"+colgName);
 }
 
 }
